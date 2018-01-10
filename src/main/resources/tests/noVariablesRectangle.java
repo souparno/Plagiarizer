@@ -1,7 +1,7 @@
 package tests;
 
 public class noVariablesRectangle {
-    public Rectangle(){
+    public noVariablesRectangle(){
         //do something
         1 + 1;
     }

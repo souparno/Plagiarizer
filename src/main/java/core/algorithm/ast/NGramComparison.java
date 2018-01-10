@@ -38,7 +38,7 @@ public class NGramComparison {
     }
 
     /**
-     * comapre two AST and save the result
+     * compare two AST and save the result
      *
      * @param t1 the first AST to be compared
      * @param t2 the second AST to be compared
@@ -132,8 +132,8 @@ public class NGramComparison {
     /**
      * calculate the difference between the String data of two AST using ngram
      *
-     * @param target1 the String list data of the first targer
-     * @param target2 the  String list data of the second targer
+     * @param target1 the String list data of the first target
+     * @param target2 the  String list data of the second target
      */
     public double calculateResult(List<String> target1, List<String> target2) {
         double count = 0.0;

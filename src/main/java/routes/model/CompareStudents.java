@@ -3,7 +3,6 @@ package routes.model;
 public class CompareStudents {
     private Students[] students;
 
-
     public Students[] getStudents() {
         return students;
     }

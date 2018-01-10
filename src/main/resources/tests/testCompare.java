@@ -1,3 +1,5 @@
+
 public class testCompare {
-  String str = 'hello world';
+
+    String str = "hello world";
 }

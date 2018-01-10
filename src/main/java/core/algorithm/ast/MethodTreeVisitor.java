@@ -28,7 +28,7 @@ public class MethodTreeVisitor extends VoidVisitorAdapter {
      * Build AST for all method in each class
      *
      * @param n for the current method  to visit
-     * @return
+     * @param arg
      */
     @Override
     public void visit(MethodDeclaration n, Object arg) {
@@ -102,7 +102,7 @@ public class MethodTreeVisitor extends VoidVisitorAdapter {
     }
 
     /**
-     * Check if the stirng includ some special Char
+     * Check if the sting includes special Chars
      *
      * @return ture if  include
      */

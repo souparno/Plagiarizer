@@ -17,7 +17,7 @@ public class FeildVisitor extends VoidVisitorAdapter {
      * Store all the globle varible in each class
      *
      * @param f for the current field declaration to visit
-     * @return
+     * @param arg
      */
     @Override
     public void visit(FieldDeclaration f, Object arg) {

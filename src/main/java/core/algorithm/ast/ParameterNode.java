@@ -11,8 +11,8 @@ public class ParameterNode {
     /**
      * constructor
      *
-     * @param type for the typr of current parameter
-     * @param name for the typr of current parameter
+     * @param type for the type of current parameter
+     * @param name for the type of current parameter
      */
     public ParameterNode(String name, String type) {
         this.name = name;
@@ -41,12 +41,13 @@ public class ParameterNode {
     }
 
     /**
-     * @param type for the typr of current parameter
+     * @param type for the type of current parameter
      */
     public void setType(String type) {
         this.type = type;
     }
 
+    @Override
     public String toString() {
 
         return type + " " + name;

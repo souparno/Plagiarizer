@@ -19,8 +19,7 @@ public class Reader {
             BufferedReader inputStream = null;
             try {
                 // contains the content of the file in UTF-8
-                inputStream = new BufferedReader(new InputStreamReader(
-                        new FileInputStream(pathToFile), "UTF-8"));
+                inputStream = new BufferedReader(new InputStreamReader(new FileInputStream(pathToFile), "UTF-8"));
 
                 int program;
                 String builder = "";

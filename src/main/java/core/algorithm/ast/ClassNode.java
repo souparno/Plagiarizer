@@ -13,7 +13,6 @@ public class ClassNode {
      * constructor
      *
      * @param name for class name
-     * @return
      */
     public ClassNode(String name) {
         this.name = name;

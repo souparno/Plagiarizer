@@ -12,6 +12,7 @@ public class Factory extends AbstractFactory {
     /**
      * @return the Assignment (an instance of Assignment)
      */
+    @Override
     public Assignment createAssignment() {
         return Assignment.createAssignment();
     }
@@ -19,6 +20,7 @@ public class Factory extends AbstractFactory {
     /**
      * @return the Submission
      */
+    @Override
     public Submission createSubmission() {
         return new Submission();
     }
@@ -28,6 +30,7 @@ public class Factory extends AbstractFactory {
      * @param name      is the name of the student
      * @return the Submission with the given studentID and name
      */
+    @Override
     public Submission createSubmission(int studentID, String name) {
         return new Submission(studentID, name);
     }
@@ -39,6 +42,7 @@ public class Factory extends AbstractFactory {
      * @param fileNames is the file names of each file uploaded by the students
      * @return the Submission with the given studentID, name, filePaths and fileNames
      */
+    @Override
     public Submission createSubmission(int studentID, String name, String[] filePaths, String[] fileNames) {
         return new Submission(studentID, name, filePaths, fileNames);
     }
@@ -46,6 +50,7 @@ public class Factory extends AbstractFactory {
     /**
      * @return the Writer
      */
+    @Override
     public Writer Writer() {
         return new Writer();
     }
@@ -53,6 +58,7 @@ public class Factory extends AbstractFactory {
     /**
      * @return the Reader
      */
+    @Override
     public Reader Reader() {
         return new Reader();
     }
