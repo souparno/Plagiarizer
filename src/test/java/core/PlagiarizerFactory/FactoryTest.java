@@ -62,12 +62,12 @@ public class FactoryTest {
     public void testCreateSubmission_0args() {
         System.out.println("createSubmission");
 
-        String[] fileNames = {"souparno.java"};
-        String[] filePaths = {""};
+        String[] fileNames = {"Souparno.java"};
+        String[] filePaths = {"./Souparno.java"};
         Factory factory = new Factory();
-        Submission submisson = factory.createSubmission();
+        Submission submission = factory.createSubmission();
 
-        submission.setStudentId(1);
+        submission.setStudentID(1);
         submission.setStudentName("souparno");
         submission.setFileNames(fileNames);
         submission.setFilePaths(filePaths); 
