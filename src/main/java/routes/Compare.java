@@ -49,7 +49,7 @@ public class Compare {
         }
     }
 
-    private double[] AllComparisons(String[] project1, String[] project2) throws Exception {
+    double[] AllComparisons(String[] project1, String[] project2) throws Exception {
 
         double[] arrayOfResults = new double[4];
 
