@@ -5,15 +5,11 @@
  */
 package routes;
 
-import java.util.Arrays;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.springframework.http.ResponseEntity;
-import routes.model.CompareStudents;
 
 /**
  *
@@ -41,11 +37,11 @@ public class CompareTest {
     }
 
     /**
-     * Test of assignments method, of class Compare.
+     * Test of AllComparisons method, of class Compare.
      */
     @Test
-    public void testAssignments() {
-        System.out.println("assignments");
+    public void testAllComparisons() {
+        System.out.println("AllComparisons");
         Compare ob = new Compare();
         String project1[]={"/home/satnam-sandhu/Desktop/1.java"};
         String project2[]={"/home/satnam-sandhu/Desktop/2.java"};
@@ -58,7 +54,6 @@ public class CompareTest {
         }
         
         System.out.println("AST: "+results[0]);
-
     }
     
 }

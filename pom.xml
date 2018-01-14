@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>PlagiarismDetector</name>
+    <name>Plagiarizer</name>
     <description>Plagiarism Detector project for MSD</description>
 
     <parent>

@@ -52,22 +52,20 @@ public class Compare {
     double[] AllComparisons(String[] project1, String[] project2) throws Exception {
 
         double[] arrayOfResults = new double[4];
+        double textDiffAvg;
 
         // AST Comparison
-        NGramComparison astComparison = new NGramComparison();
-        astComparison.nGramComparison(project1, project2);
+        NGramComparison ngramcomparison = new NGramComparison();
+        ngramcomparison.nGramComparison(project1, project2);
         // LCS and LD Comparison
         CodeComparisonScores textDiffScores = new CodeComparisonScores(project1, project2);
 
         // Retrieve scores via getters and store them in array for easier output use as a JSON object.
-        arrayOfResults[0] = astComparison.getResult() * 100;
+        arrayOfResults[0] = ngramcomparison.getResult() * 100;
         arrayOfResults[1] = textDiffScores.getScoreForLCS();
         arrayOfResults[2] = textDiffScores.getScoreForLD();
-
-        double textDiffAvg = textDiffScores.getOverallTextDiffScore();
-
+        textDiffAvg = textDiffScores.getOverallTextDiffScore();
         arrayOfResults[3] = (textDiffAvg + arrayOfResults[0]) / 2;
-
 
         return arrayOfResults;
     }

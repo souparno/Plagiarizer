@@ -5,51 +5,51 @@
  */
 package core.algorithm.ast;
 
-import java.util.List;
+import java.io.IOException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
  * @author bonnie
  */
 public class NGramComparisonTest {
-    
-    public NGramComparisonTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
-    /**
-     * Test of nGramComparison method, of class NGramComparison.
-     * @throws java.lang.Exception
-     */
-    @Test
-    public void testNGramComparison_StringArr_StringArr() throws Exception {
-        System.out.println("nGramComparison");
-        String[] project1 = null;
-        String[] project2 = null;
-        NGramComparison instance = new NGramComparison();
-        instance.nGramComparison(project1, project2);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
+	public NGramComparisonTest() {
+	}
+
+	@BeforeClass
+	public static void setUpClass() {
+	}
+
+	@AfterClass
+	public static void tearDownClass() {
+	}
+
+	@Before
+	public void setUp() {
+	}
+
+	@After
+	public void tearDown() {
+	}
+
+	/**
+	 * Test of getResult method, of class NGramComparison.
+	 * @throws java.io.IOException
+	 */
+	@Test
+	public void testGetResult() throws IOException {
+		System.out.println("getResult");
+		double result = 0;
+		String project1[] = {"/home/satnam-sandhu/Desktop/1.java"};
+		String project2[] = {"/home/satnam-sandhu/Desktop/2.java"};
+		NGramComparison ngramcomparison = new NGramComparison();
+		ngramcomparison.nGramComparison(project1, project2);
+		result = ngramcomparison.getResult();
+		System.out.println(result);
+	}
 }
